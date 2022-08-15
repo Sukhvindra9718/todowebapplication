@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/todo.css">
+
+</head>
+
+<body>
+    <header class="header">
+        {{> header}}
+        <div class="headline">
+            <h2 id="main-heading">Manage your task <span style="display:none">hello</span></h2>
+            <button class="btn btn-headline btn-main">Learn More</button>
+        </div>
+    </header>
+   
+    <div class="body">
+        <div class="header1">
+            <h1>Task List 2022</h1>
+            <form id="new-task-form">
+                <input type="text" id="new-task-input" placeholder="What do you have planned?">
+                <input type="submit" id="new-task-submit" value="Add task">
+            </form>
+            <main>
+                <section class="task-list">
+                    <h2>Tasks</h2>
+                    <div id="tasks">
+                    </div>
+                </section>
+            </main>   
+        </div>
+
+    </div>
+    {{>footer}}
+    <script src="../src/todo.js"></script>
+</body>
+
+</html>

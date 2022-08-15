@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;300;400;500;600;7001,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: brown;
+}
+
+.logo {
+    color: black;
+}
+
+.header {
+    min-height: 80vh;
+    width: 100%;
+    background: url('./bg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+}
+.header img{
+    height: 50vh;
+    width: 80%;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: beige;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+nav ul li {
+    margin: 20px;
+    font-size: 20px;
+    list-style: none;
+    font-weight: bolder;
+}
+
+.headline {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    display: inline-block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(160, 160, 120);
+    color: black;
+}
+.btn-headline {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+.btn-main{
+    background-color: rgb(252, 167, 167);
+}
+
+.signUp {
+    margin: 5rem auto;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    padding: 1rem;
+}
+
+.signUp-form {
+    max-width: 800px;
+    width: 95%;
+    margin: auto;
+    text-align: left;
+}
+
+.signUp-form label {
+    display: block;
+}
+
+.signUp-form input {
+    display: block;
+    width: 100%;
+    padding: 8px
+}
+
+.form-group {
+    margin-top: 1rem;
+}
+
+textarea {
+    outline: none;
+    width: 100%;
+}
+
+.btn-center {
+    display: block;
+    margin: auto;
+    padding: 7px 40px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: rgb(44, 55, 66);
+    color: white;
+}
+.footer{
+    width: 100%;
+    height:50px;
+    background-color: black;
+    margin: auto;
+    position:absolute;
+    bottom: 0;
+}
+.footer p{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.5;
+}
